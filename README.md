@@ -34,3 +34,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Scripts Explanations
+
+pull - script will pull all the changes from the db to our local schema files
+generate - script will generate the migrations
+drop - script will drop the migrations that we dont want to push
+check -script will keep upto date with our local schema files
+
+### External Steps 
+
+I utilized the Stripe query within Supabase to integrate the required Stripe tables. This involved enhancing the query by including email and updated_at fields. Additionally, I adjusted the user table's permissions to ensure visibility to all users.
+
+
+### Referred base Repo 
+
+[WebProdigies-cypress](https://github.com/webprodigies/webprodigies-cypress/tree/main)
+
+### Packages Used 
+
+npm i drizzle-orm postgres dotenv
+npm i drizzle-kit -D
