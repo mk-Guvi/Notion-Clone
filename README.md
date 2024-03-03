@@ -42,10 +42,12 @@ generate - script will generate the migrations
 drop - script will drop the migrations that we dont want to push
 check -script will keep upto date with our local schema files
 
-### External Steps 
+### External Steps/scripts 
 
 I utilized the Stripe query within Supabase to integrate the required Stripe tables. This involved enhancing the query by including email and updated_at fields. Additionally, I adjusted the user table's permissions to ensure visibility to all users.
 
+yarn pull to fetch the stripe tables to local
+yarn generate to update the tables
 
 ### Referred base Repo 
 
