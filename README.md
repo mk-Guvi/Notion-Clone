@@ -44,6 +44,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 -  npm run pull //After running the stripe query in supabase
 -  npx shadcn-ui@latest init
 -  yarn add next-themes
+-  npx shadcn-ui@latest add button
+-  npx shadcn-ui@latest add card
+-  npx shadcn-ui@latest add avatar
+-  npx shadcn-ui@latest add navigation-menu
+
+
+
 
 ## SCRIPTS :
 
