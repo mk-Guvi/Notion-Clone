@@ -42,6 +42,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 -  yarn add drizzle-kit -D
 -  yarn generate //For migrations
 -  npm run pull //After running the stripe query in supabase
+-  npx shadcn-ui@latest init
+-  yarn add next-themes
 
 ## SCRIPTS :
 
