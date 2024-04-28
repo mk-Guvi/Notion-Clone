@@ -34,3 +34,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Dependencies and steps : 
+
+-  npx create-next-app@latest .
+-  yarn add drizzle-orm postgres dotenv
+-  yarn add drizzle-kit -D
+-  yarn generate //For migrations
+-  npm run pull //After running the stripe query in supabase
+
+## SCRIPTS :
+
+- "push": "drizzle-kit push:pg" //Pushes the schema from local to live
+- "pull": "drizzle-kit introspect:pg " //Pulls the schema from live to local
+- "generate": "drizzle-kit generate:pg" // Initiates the migrations
+- "drop": "drizzle-kit drop" // removes a migration
+- "check": "drizzle-kit check:pg" //checks the schema
+- "up": "drizzle-kit up:pg" // keeps the schema upto date
+-  "migrate": "npm run src/lib/supabase/migration.ts" // As we have added the migration script inside the db file itself we no need to run this
