@@ -8,6 +8,13 @@
       "when": 1714300652057,
       "tag": "0000_narrow_red_shift",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1716172285731,
+      "tag": "0001_free_mad_thinker",
+      "breakpoints": true
     }
   ]
 }
